@@ -79,9 +79,21 @@
         }
     }">
         <div class="max-w-screen-xl mx-auto px-3 py-12">
-            <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-bold text-blue-700 mb-4">MentorNigeria School Consulting & Mentorship Mastery Program</h1>
-                <p class="text-lg md:text-xl text-gray-600 italic">Your Pathway to Purpose — Equip Yourself to Transform Schools and Shape the Future</p>
+            <div class="mb-12 grid grid-cols-1 md:grid-cols-2 gap-y-8">
+                <div class="md:pt-5">
+                    <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">MentorNigeria School Consulting & Mentorship Mastery Program</h1>
+                    <p class="text-lg md:text-xl text-gray-600 italic mb-3">Your Pathway to Purpose — Equip Yourself to Transform Schools and Shape the Future</p>
+                    <button 
+                        class="text-lg md:text-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl shadow cursor-pointer transtion duration-300"
+                        @click="showModal = true"
+                    >
+                        Enrol Now
+                    </button>
+                </div>
+
+                <div class="max-w-[500px] justify-self-center">
+                    <img src="assets/images/headerimage.webp" class="object-cover image-animation">
+                </div>   
             </div>
 
             <div class="bg-gray-100 rounded-xl shadow-md p-6 md:p-10 mb-10">
@@ -335,6 +347,7 @@
                                     name="email"
                                     id="email"
                                     required
+                                    autocomplete="email"
                                     class="w-full border border-gray-700 focus:border-blue-600 text-[14.5px] outline-none px-3 py-2 transition duration-300 text-primary-footer-gray-text focus:text-black font-semibold"
                                 >
                             </div>
@@ -355,6 +368,7 @@
                                     name="address"
                                     id="address"
                                     required
+                                    autocomplete="address-level1"
                                     class="w-full border border-gray-700 focus:border-blue-600 text-[14.5px] outline-none px-3 py-2 transition duration-300 text-primary-footer-gray-text focus:text-black font-semibold"
                                 >
                             </div>

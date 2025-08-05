@@ -8,3 +8,17 @@
 p, ul, a {
     font-family: var(--font-poppins);
 }
+
+.image-animation {
+  display: inline-block;
+  transform: translateY(-20px);
+  filter: drop-shadow(0 0 15px #0848d1);
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
