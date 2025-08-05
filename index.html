@@ -19,6 +19,10 @@
             paymentOption: '',
             address: '',
         },
+        pricingTitles: {
+            option1: '✅ Option 1: Direct Payment Plan',
+            option2: '✅ Option 2: Referral Plan',
+        },
         processingMessage: false,
         successModal: false,
         modalTitle: 'Fill the Form Below',
@@ -76,29 +80,34 @@
     }">
         <div class="max-w-screen-xl mx-auto px-3 py-12">
             <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-blue-700 mb-4">MentorNigeria School Consulting & Mentorship Mastery Program</h1>
-            <p class="text-lg md:text-xl text-gray-600">Empowering Education Leaders to Scale Their Impact and Income</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-700 mb-4">MentorNigeria School Consulting & Mentorship Mastery Program</h1>
+                <p class="text-lg md:text-xl text-gray-600 italic">Your Pathway to Purpose — Equip Yourself to Transform Schools and Shape the Future</p>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-md p-6 md:p-10 mb-10">
+                <h1 class="text-3xl font-bold mb-2 text-black">Become a Trusted School Consultant & Growth Mentor</h1>
+                <p class="text-lg md:text-xl text-gray-800">Join expert-led sessions and master the proven strategies, systems, and tools you need to build and scale a thriving school consulting business.</p>
             </div>
 
             <div class="bg-gray-100 rounded-xl shadow-md p-6 md:p-10 mb-10 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h2 class="text-2xl font-semibold mb-4 text-blue-600">✅ What You’ll Gain</h2>
                     <ul class="space-y-2 text-gray-800 list-disc list-inside">
-                    <li>Practical School Growth Frameworks</li>
-                    <li>Consulting & Coaching Toolkit</li>
-                    <li>Hands-On Mentorship</li>
-                    <li>Real-World Projects</li>
-                    <li>Certification & Lifetime Access</li>
+                    <li>Proven School Consulting Frameworks</li>
+                    <li>Hands-On Strategies and Expert Guidance for Lasting Growth</li>
+                    <li>Ready-to-Use Consulting & Coaching Toolkits</li>
+                    <li>Support on Real-Life Projects</li>
+                    <li>Certificate of Completion + Lifetime Access</li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="text-2xl font-semibold mb-4 text-blue-600">📦 Program Package Includes</h2>
                     <ul class="space-y-2 text-gray-800 list-disc list-inside">
-                    <li>9 Core Modules</li>
-                    <li>Consulting Toolkit</li>
-                    <li>Live Coaching Sessions</li>
-                    <li>Bonus Modules</li>
-                    <li>Alumni Network & Job Referrals</li>
+                    <li>9 Core Training Modules</li>
+                    <li>Live & Virtual Mentorship Sessions</li>
+                    <li>Ongoing Professional Development Support</li>
+                    <li>Quick-Start Blueprint for Earning Immediately</li>
+                    <li>Access to Alumni Network & Job Opportunities</li>
                     </ul>
                 </div>
             </div>
@@ -107,19 +116,21 @@
                 <div class="bg-gray-100 rounded-xl shadow-md p-6">
                     <h3 class="text-2xl font-semibold mb-4 text-blue-600">💼 Who Should Enrol?</h3>
                     <ul class="space-y-2 text-gray-800 list-disc list-inside">
-                    <li>School Owners & Administrators</li>
-                    <li>Teachers transitioning into consulting</li>
-                    <li>Education Entrepreneurs</li>
-                    <li>Business Consultants entering the school sector</li>
-                    <li>Ministry/Agency Education Officers</li>
+                    <li>School Owners & Senior Administrators</li>
+                    <li>Edupreneurs Seeking New Revenue Streams</li>
+                    <li>Business Consultants Entering the Education Sector</li>
+                    <li>Government & NGO Education Officers</li>
+                    <li>Teachers and Ambitious Young Adults Seeking Purposeful Careers</li>
                     </ul>
                 </div>
                 <div class="bg-gray-100 rounded-xl shadow-md p-6">
                     <h3 class="text-2xl font-semibold mb-4 text-blue-600"> 🔥 Why MentorNigeria?</h3>
                     <ul class="space-y-2 text-gray-800 list-none list-inside">
-                    <li>✅ Built by experienced school growth consultants with a proven track record of growing successful schools</li>
-                    <li>✅ <strong>Results-driven:</strong> Our alumni now serve over 350 schools</li>
-                    <li>✅ Practical, no-fluff curriculum tailored for Nigeria & Africa</li>
+                    <li>✅ Created by Leading School Growth Consultants with Proven Results</li>
+                    <li>✅ Alumni Currently Supporting Over <strong>350</strong> Schools</li>
+                    <li>✅ <strong>Blended Learning:</strong> Live Coaching, Hands-On Practicum, and Self-Paced Modules</li>
+                    <li>✅ No-Fluff, Results-Oriented Curriculum Tailored for Nigeria & Africa</li>
+                    <li>✅ Access to MentorNigeria Academy Resources</li>
                     </ul>
                 </div>
             </div>
@@ -130,60 +141,142 @@
                 </div>
                 <div class="p-6 md:p-10 mb-10 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 text-blue-600">✅ Option 1: One-Time Payment Offer</h2>
-                        <p class="text-blue-600 font-semibold">Limited-Time Opportunity!</p>
-                        <p class="text-gray-800">Make a one-time payment of <strong>₦249,999</strong> (Save <strong>₦250,000</strong>) before <strong>September 20th, 2025</strong>, and gain <strong>full access to the entire program — no hidden fees, no delays</strong>.</p>
+                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option1"></h2>
+                        <p class="font-semibold">🔥 <span class="text-red-600">Limited-Time Offer</span>: ₦449,999</p>
+                        <p class="font-semibold">— Save ₦200,000! Offer ends 10th October, 2025</p>
+                        <p class="text-gray-800">Perfect for action-takers who want to maximize every opportunity from day one</p>
                     </div>
 
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 text-blue-600">✅ Option 2: Registration Fee + Referral Plan</h2>
+                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option2"></h2>
                         <p class="text-blue-600 font-semibold">Join with Less, Grow with More!</p>
-                        <p class="text-gray-800 mb-3">Pay just <strong>₦99,999</strong> as your <strong>registration fee</strong>, and refer just <strong>2 schools</strong> to the LearnNova Learning Support Program before <strong>September 20th, 2025</strong> to unlock <strong>full enrollment</strong> into the program — all remaining modules included!</p>
-                        <a href="https://www.learnnova.ng/schoolgrowthsystem/trenova" target="_blank" class="text-blue-700 hover:text-purple-800 font-bold underline transition duration-200">Click here to view the LearnNova Program you'll be referring schools to</a>
+                        <p class="text-gray-800 mb-3">Pay just <strong>₦299,999</strong> as your <strong>registration fee</strong> and Refer <strong>1 participant</strong> to this training <strong>or 2 schools</strong> to the LearnNova Learning Support Program</p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mb-12">
-            <h2 class="text-2xl font-bold text-blue-700 mb-2">Ready to Start?</h2>
-            <p class="text-gray-600 mb-4">Enrol in Module 1 for ₦99,999 and gain instant access to expert-led training and consulting tools.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <button 
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl shadow cursor-pointer transtion duration-300"
-                    @click="showModal = true"
+            <div class="bg-gray-100 rounded-xl shadow-md py-6 md:p-10 mb-10" x-data="{showCurriculumn: false}">
+                <div 
+                    x-show="showCurriculumn"
+                    class="mb-6.5 px-6"
+                    x-cloak 
+                    x-transition
                 >
-                    Enrol Now
-                </button>
-                <a href="#" download class="border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white hover:shadow font-semibold py-2 px-6 rounded-xl transtion duration-300">Download Brochure</a>
-                <a href="https://api.whatsapp.com/send?phone=2347044086794&text&type=phone_number&app_absent=0" target="_blank" class="border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white hover:shadow font-semibold py-2 px-6 rounded-xl transtion duration-300">Book Free Chat</a>
+                    <h1 class="text-2xl font-bold text-black mb-4.5 text-center">📘 Curriculum Overview</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 1: Core Consulting Skills & Methodologies</h2>
+                            <p>Build essential consulting skills and understand the unique dynamics of the education industry.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 2: Starting or Rescuing a School</h2>
+                            <p>Master the strategies for launching new schools or turning around underperforming ones.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 3: School Makeover & Ambience Advisory</h2>
+                            <p>Learn to transform school environments through design, branding, and structural enhancements.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 4: Enrolment Growth Strategies</h2>
+                            <p>Apply tested marketing and outreach methods to boost student enrolment.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 5: Revenue Growth & Profitability Strategies</h2>
+                            <p>Drive school profitability with practical financial and operational improvements.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 6: Effective School Management & Operations</h2>
+                            <p>Develop and implement systems for daily management, staff coordination, and leadership.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 7: Financial Management for School Owners</h2>
+                            <p>Empower school leaders with financial planning and budgeting skills.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 8: Digital Integration & E-Learning Strategy</h2>
+                            <p>Help schools adopt tech tools and implement sustainable e-learning solutions.</p>
+                        </div>
+                        <div class="col-start-1 col-span-full">
+                            <h2 class="text-lg font-semibold text-blue-600">MODULE 9: Consulting Practice Setup, Business Growth & Capstone Project</h2>
+                            <p>Build and grow your consulting business — includes a practical project to showcase your capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p 
+                    class="text-center text-blue-700 hover:text-purple-800 font-bold px-2 md:px-6 underline cursor-pointer transition duration-200"
+                    @click="showCurriculumn = !showCurriculumn"
+                    x-text="showCurriculumn ? 'Click Here to Hide Curriculum Overview' : 'Click Here to View Curriculum Overview'"
+                >     
+                </p>
             </div>
+
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold text-blue-700 mb-2">Ready to Start?</h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button 
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl shadow cursor-pointer transtion duration-300"
+                        @click="showModal = true"
+                    >
+                        Enrol Now
+                    </button>
+                    <a 
+                        href="assets/downloads/MentorNigeria School Consulting Training & Mentorship Brochure.pdf" 
+                        download 
+                        class="border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white hover:shadow font-semibold py-2 px-6 rounded-xl transtion duration-300"
+                    >
+                        Download Brochure
+                    </a>
+                    <a 
+                        href="https://api.whatsapp.com/send?phone=2347044086794&text&type=phone_number&app_absent=0" 
+                        target="_blank" 
+                        class="border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white hover:shadow font-semibold py-2 px-6 rounded-xl transtion duration-300"
+                    >
+                        Book a Free Chat
+                    </a>
+                </div>
             </div>
 
             <div class="bg-gray-100 rounded-xl p-6 mb-12">
-            <h3 class="text-xl font-semibold text-blue-600 mb-4">💬 What Others Are Saying</h3>
-            <ul class="space-y-4 mb-4 text-gray-800 list-none list-inside">
-                <li>
-                    <p class="italic">💎 “Great, creative mind blowing and really a great program. The program has given us insight into areas that we have not taken cognizance off before now.”</p>
-                    <p class="text-blue-600 font-semibold">Olayemi Abosede Oluwatosin, Proprietress, Yemi Int’l School.</p>
-                </li>
-                <li>
-                    <p class="italic">💎 “It is an interesting programme, the training and the learning support system are fascinating and money spinning” </p>
-                    <p class="text-blue-600 font-semibold">Ogunsina, Durable Schools, Ijegun, Ikotun – Lagos.</p>
-                </li>
-                <li>
-                    <p class="italic">💎 “The training was awesome and practical in nature”</p>
-                    <p class="text-blue-600 font-semibold">Bolanle Ogunnusi, Micmary School, Ketu, Lagos.</p>
-                </li>
-            </ul>
-            <a href="https://t.me/trenovagrouptestimonials" target="_blank" class="text-blue-700 hover:text-purple-800 font-bold underline transition duration-200">Still not satisfied? Click here to see more!</a>  
+                <h3 class="text-xl font-semibold text-blue-600 mb-3">🏫 Training Venue:</h3>
+                <ul class="text-gray-800 list-none list-inside mb-4">
+                    <li>Attend live at:</li>
+                    <li><strong>TreNova Training Centre</strong> </li>
+                    <li>7B Ogunsiji Close, Off Ogunmodede Street, Behind GTBank, Allen, Ikeja, Lagos</li>
+                </ul>
+                <p><strong>— OR Join Virtually from Anywhere.</strong></p>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl p-6 mb-12">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">💬 What Others Are Saying</h3>
+                <ul class="space-y-4 mb-4 text-gray-800 list-none list-inside">
+                    <li>
+                        <p class="italic">💎 “Great, creative mind blowing and really a great program. The program has given us insight into areas that we have not taken cognizance off before now.”</p>
+                        <p class="text-blue-600 font-semibold">Olayemi Abosede Oluwatosin, Proprietress, Yemi Int’l School.</p>
+                    </li>
+                    <li>
+                        <p class="italic">💎 “It is an interesting programme, the training and the learning support system are fascinating and money spinning” </p>
+                        <p class="text-blue-600 font-semibold">Ogunsina, Durable Schools, Ijegun, Ikotun – Lagos.</p>
+                    </li>
+                    <li>
+                        <p class="italic">💎 “The training was awesome and practical in nature”</p>
+                        <p class="text-blue-600 font-semibold">Bolanle Ogunnusi, Micmary School, Ketu, Lagos.</p>
+                    </li>
+                </ul>
+                <a href="https://t.me/trenovagrouptestimonials" target="_blank" class="text-blue-700 hover:text-purple-800 font-bold underline transition duration-200">Still not satisfied? Click here to see more!</a>  
             </div>
 
             <div class="text-center text-gray-600">
                 <h4 class="text-lg font-semibold text-blue-600 mb-2">📍 Need Help Deciding?</h4>
-                <a href="tel:07044086794" class="hover:font-semibold hover:text-purple-700 transition duration-200">📞 +234-7044086794</a>
-                <p></p>
+                <div class="flex flex-col space-y-1.5 mb-2">
+
+                    <a href="tel:07044086794" class="hover:font-semibold hover:text-purple-700 transition duration-200"><span class="font-semibold">📞 Corporate:</span> +234-704-408-6794</a>
+                    <a href="tel:07030148694" class="hover:font-semibold hover:text-purple-700 transition duration-200"><span class="font-semibold">📞 Brenda:</span> +234-703-014-8694</a>
+                    <a href="tel:07019298464" class="hover:font-semibold hover:text-purple-700 transition duration-200"><span class="font-semibold">📞 Abiola:</span> +234-701-929-8464</a>
+                </div>
+                
                 <a href="mailto:info@learnnova.ng" class="hover:font-semibold hover:text-purple-700 transition duration-200">📧 info@learnnova.ng</a>
-                <p class="mt-4 font-bold text-blue-700">Build a Career. Change Schools. Multiply Your Impact.</p>
+                <p class="mt-4 font-bold text-blue-700">Get Mentored. Build a Career. Multiply Your Impact.</p>
             </div>
         </div>
 
@@ -249,8 +342,8 @@
                                 <label for="paymentOption" class="text-blue-900 text-sm">Preffered Payment Option:</label>
                                 <select x-model="formData.paymentOption" name="paymentOption" id="paymentOption" class="w-full border border-gray-700 focus:border-blue-600 text-[14.5px] outline-none px-1.5 py-2 transition duration-300 text-primary-footer-gray-text focus:text-black font-semibold" required>
                                     <option value="" disabled>Select Payment Option</option>
-                                    <option value="option1">One Time Payment Offer</option>
-                                    <option value="option2">Registration Fee + Referral Plan</option>
+                                    <option value="option1" x-text="pricingTitles.option1"></option>
+                                    <option value="option2" x-text="pricingTitles.option2"></option>
                                 </select>
                             </div>
                             <div class="col-start-1 col-span-full">
@@ -297,9 +390,9 @@
                         <h2 class="text-xl font-semibold mb-4 text-blue-600">✅ Congratulations <span x-text="formData.fullName"></span></h2>
                         <p class="text-gray-800 mb-3">You have successfully enrolled for the Mentorship Training Program. Based on the <strong>Payment Option</strong> you picked you would be required to pay the sum of <span class="text-blue-600 font-bold" x-text="formData.paymentOption === 'option1'? '₦249,999': '₦99,999'">dash</span> to the account details below:</p>
                         <ul class="space-y-3 list-none list-inside mb-4 uppercase">
+                            <li>Account Name: <strong>Trenova Ltd</strong></li>
                             <li>Account Number: <strong>1015524196</strong></li>
                             <li>Bank Name: <strong>Zenith Bank</strong></li>
-                            <li>Account Name: <strong>Trenova Ltd</strong></li>
                         </ul>
                         <a href="#" @click.prevent="copyToClipboard"
                             class="text-blue-700 hover:text-purple-800 font-bold underline transition duration-200">
