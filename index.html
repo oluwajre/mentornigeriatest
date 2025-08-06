@@ -20,8 +20,14 @@
             address: '',
         },
         pricingTitles: {
-            option1: '✅ Option 1: Direct Payment Plan',
-            option2: '✅ Option 2: Referral Plan',
+            option1: {
+                name: '✅ Option 1: Direct Payment Plan',
+                price: '₦449,999'
+            },
+            option2: {
+                name: '✅ Option 2: Referral Plan',
+                price: '₦299,999'
+            },
         },
         processingMessage: false,
         successModal: false,
@@ -153,16 +159,16 @@
                 </div>
                 <div class="p-6 md:p-10 mb-10 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option1"></h2>
-                        <p class="font-semibold">🔥 <span class="text-red-600">Limited-Time Offer</span>: ₦449,999</p>
+                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option1.name"></h2>
+                        <p class="font-semibold">🔥 <span class="text-red-600">Limited-Time Offer</span>: <span x-text="pricingTitles.option1.price"></span></p>
                         <p class="font-semibold">— Save ₦200,000! Offer ends 31st October, 2025</p>
                         <p class="text-gray-800">Perfect for action-takers who want to maximize every opportunity from day one</p>
                     </div>
 
                     <div>
-                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option2"></h2>
+                        <h2 class="text-xl font-semibold mb-4 text-blue-600" x-text="pricingTitles.option2.name"></h2>
                         <p class="text-red-600 font-semibold">Join with Less, Grow with More!</p>
-                        <p class="text-gray-800 mb-3">Pay just <strong>₦299,999</strong> as your <strong>registration fee</strong> and Refer <strong>1 participant</strong> to this training <strong>or 2 schools</strong> to the LearnNova Learning Support Program</p>
+                        <p class="text-gray-800 mb-3">Pay just <strong x-text="pricingTitles.option2.price"></strong> as your <strong>registration fee</strong> and Refer <strong>1 participant</strong> to this training <strong>or 2 schools</strong> to the LearnNova Learning Support Program</p>
                     </div>
                 </div>
             </div>
@@ -355,8 +361,8 @@
                                 <label for="paymentOption" class="text-blue-900 text-sm">Preffered Payment Option:</label>
                                 <select x-model="formData.paymentOption" name="paymentOption" id="paymentOption" class="w-full border border-gray-700 focus:border-blue-600 text-[14.5px] outline-none px-1.5 py-2 transition duration-300 text-primary-footer-gray-text focus:text-black font-semibold" required>
                                     <option value="" disabled>Select Payment Option</option>
-                                    <option value="option1" x-text="pricingTitles.option1"></option>
-                                    <option value="option2" x-text="pricingTitles.option2"></option>
+                                    <option value="pricingTitles.option1.price" x-text="pricingTitles.option1.name"></option>
+                                    <option value="pricingTitles.option2.price" x-text="pricingTitles.option2.name"></option>
                                 </select>
                             </div>
                             <div class="col-start-1 col-span-full">
@@ -402,7 +408,7 @@
                         }
                     }">
                         <h2 class="text-xl font-semibold mb-4 text-blue-600">✅ Congratulations <span x-text="formData.fullName"></span></h2>
-                        <p class="text-gray-800 mb-3">You have successfully enrolled for the Mentorship Training Program. Based on the <strong>Payment Option</strong> you picked you would be required to pay the sum of <span class="text-blue-600 font-bold" x-text="formData.paymentOption === 'option1'? '₦249,999': '₦99,999'">dash</span> to the account details below:</p>
+                        <p class="text-gray-800 mb-3">You have successfully enrolled for the School Consulting Training & Mentorship Training Program. Based on the <strong>Payment Option</strong> you picked, you would be required to pay the sum of <span class="text-blue-600 font-bold" x-text="formData.paymentOption">dash</span> to the account details below</p>
                         <ul class="space-y-3 list-none list-inside mb-4 uppercase">
                             <li>Account Name: <strong>Trenova Ltd</strong></li>
                             <li>Account Number: <strong>1015524196</strong></li>
@@ -412,6 +418,7 @@
                             class="text-blue-700 hover:text-purple-800 font-bold underline transition duration-200">
                             Click to Copy Account Information to Clipboard
                         </a>
+                        <p class="mt-4 text-red-600">Note: After Payment, make sure you send your <span class="underline font-semibold">receipt</span> with your <span class="underline font-semibold">full name</span> and <span class="underline font-semibold">payment option</span> to this number <span class="text-green-600 font-semibold">07044086794 on whatsapp</span>.</p>
                     </div>
                 </template>
                 
